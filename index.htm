@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css" />
+
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
@@ -16,6 +18,31 @@
             text-align: center;
             margin: 0;
             padding: 0;
+            position: relative;
+        }
+
+        nav {
+            background-color: #000;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        #eu {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        h2 {
+            margin-bottom: 0;
         }
 
         img {
@@ -44,6 +71,7 @@
 
         ul {
             padding: 0;
+            margin: 0;
         }
 
         strong {
@@ -60,39 +88,88 @@
             color: rgb(230, 48, 48);
         }
 
+        .card {
+            /* border: 3px solid red; */
+            height: 95vh;
+            padding: 0 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .card div {
+            border: 3px solid #fca311;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        #yt {
+            padding: 30px;
+        }
+
+        footer {
+            background-color: black;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        footer a {
+            color: white;
+            font-size: 24px;
+        }
     </style>
     <title>Protifolio</title>
 </head>
 
 <body>
-    <ul>
-        <li><a href="#eu">Eu</a></li>
-        <li><a href="#skills">Hábilidades</a></li>
-        <li><a href="#yt">Interesses</a></li>
-    </ul>
+    <nav>
+        <ul>
+            <li><a href="#eu">Eu</a></li>
+            <li><a href="#skills">Hábilidades</a></li>
+            <li><a href="#yt">Interesses</a></li>
+        </ul>
+    </nav>
+    <div id="eu">
+        <h1><span>Yuri</span> Resende Corrêa</h1>
 
-    <h1 id="eu"><span>Yuri</span> Resende Corrêa</h1>
+        <img src="img/me.png" alt="Nesta imagem sou eu, olhando para a câmera com um leve sorriso">
 
-    <img src="img/me.png" alt="Nesta imagem sou eu, olhando para a câmera com um leve sorriso">
+        <p>Futuro <strong>Web Developer</strong>, de São José do Barreiro - <strong>São Paulo</strong>.</p>
+    </div>
 
-
-
-    <p>Futuro <strong>Web Developer</strong>, de São José do Barreiro - <strong>São Paulo</strong>.</p>
-
-    <h2>Hábilidades</h2>
     <ul id="skills">
-        <li>HTML</li>
-        <p>Linguagem de marcação utilizada na construção de páginas na Web. </p>
-        <li>CSS</li>
-        <p>Mecanismo para adicionar estilo a um documento web.</p>
-        <li><strong>Javascript</strong></li>
-        <p>Linguagem de programação interpretada estruturada. Juntamente com HTML e CSS, é uma das três principais tecnologias da World Wide Web.</p>
+        <div class="card">
+            <h2>Hábilidades</h2>
+
+            <div class="card-1">
+                <li>HTML</li>
+                <p>Linguagem de marcação utilizada na construção de páginas na Web. </p>
+            </div>
+            <div class="card-2">
+                <li>CSS</li>
+                <p>Mecanismo para adicionar estilo a um documento web.</p>
+            </div>
+            <div class="card-2">
+                <li><strong>Javascript</strong></li>
+                <p>Linguagem de programação interpretada estruturada. Juntamente com HTML e CSS, é uma das três
+                    principais tecnologias da World Wide Web.</p>
+            </div>
+        </div>
 
     </ul>
-
-    <p id="yt">Gosto de um cara ai que <strong>programa</strong> e faz uns vídeos para o <em><a
-                href="https://www.youtube.com/c/GEMAPLYS" target="_blank" class="underline">YouTube</a></em></p>
+    <div id="yt">
+        <p>Gosto de um cara ai que <strong>programa</strong> e faz uns vídeos para o <em><a
+                    href="https://www.youtube.com/c/GEMAPLYS" target="_blank" class="underline">YouTube</a></em></p>
+    </div>
+    <footer>
+        <a href="https://www.linkedin.com/in/yuriresendecorrea/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+    </footer>
 
 </body>
+
 
 </html>
